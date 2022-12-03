@@ -1,6 +1,6 @@
 :root {
     --CLR-PRIMARY-LIGHT: rgb(240, 240, 240) !important;
-    --CLR-PRIMARY: rgb(220, 220, 220) !important;
+    --CLR-PRIMARY: rgba(220, 220, 220, 1) !important;
     --CLR-PRIMARY-DARK: rgb(200, 200, 200) !important;
     --CLR-SECONDARY-LIGHT: rgb(55, 55, 55) !important;
     --CLR-SECONDARY: rgb(35, 35, 35) !important;
@@ -21,12 +21,17 @@
     
     --FONT-SIZE-LOCK: ((100vw - var(--BROWSER-WIDTH-MIN-PX)) / (var(--BROWSER-WIDTH-MAX) - var(--BROWSER-WIDTH-MIN)));
     
-    --WIDTH-THREE-QUARTER: (100vw * .75)
+    --WIDTH-THREE-QUARTER: (100vw * .75);
 
-    --theme-color-primary: var(--COLOR-DARK);
-    --theme-color-secondary: var(--CLR-SECONDARY-LIGHT);
+    --theme-color-primary-ligth: var(--CLR-PRIMARY-LIGHT);
+    --theme-color-primary: var(--CLR-PRIMARY);
+    --theme-color-primary-dark: var(--CLR-PRIMARY-DARK);
+    --theme-color-secondary-ligth: var(--CLR-SECONDARY-LIGHT);
+    --theme-color-secondary: var(--CLR-SECONDARY);
+    --theme-color-secondary-dark: var(--CLR-SECONDARY-DARK);
+
     --theme-color-background: var(--CLR-PRIMARY);
-    --theme-color-foreground: var(--CLR-PRIMARY-LIGHT);
+    --theme-color-foreground: var(--CLR-SECONDARY);
 
     --border-color: var(--theme-color-primary);
   
@@ -43,10 +48,9 @@
 
 html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--theme-color-primary);
+    color: var(--theme-color-secondary);
     --font-size: calc(var(--FONT-SIZE-MIN-PX));
     font-size: var(--font-size);
-    border-top: calc(var(--font-size) * 0.25) solid var(--border-color);
 }
 
 body {
@@ -57,26 +61,57 @@ body {
 h1, h2, h3, h4, h5, h6 {
     --heading-color: var(--theme-color-primary);
     color: var(--heading-color);
-  }
+}
+
+p, span, label, small, sub {
+    --body-color: var(--theme-color-primary-dark);
+    color: var(--body-color);
+}
   
 h1.invert {
     --heading-color: var(--theme-color-foreground);
 }
 
+nav {
+    --nav-padding: .5rem 1em;
+    --nav-background: var(--theme-color-secondary);
+    
+    padding: var(--nav-padding);
+    background-color: var(--nav-background);
+
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    top: 0; left: 0; right: 0;
+}
+
+a {
+    --link-color: var(--theme-color-primary-dark);
+
+    text-decoration: none;
+    color: var(--link-color)
+}
+
 button, .button  {
     --button-background: var(--theme-color-primary);
-    --button-foreground: var(--theme-color-secondary);
+    --button-color-font: var(--theme-color-secondary);
     --button-padding: .5rem 1rem;
     --button-border-radius: 10px;
+    --button-font-weight: bold;
 
-    padding: var(--button-padding);
     background-color: var(--button-background);
-    color: var(--button-foreground);
+    color: var( --button-color-font);
+    padding: var(--button-padding);
     border-radius: var(--button-border-radius);
+    font-weight: var(--button-font-weight);
+
+    border: none;
+    font-size: var(--font-size);
 }
 button:hover, .button:hover {
     --button-background: var(--theme-color-secondary);
-    --button-foreground: var(--theme-color-foreground);
+    --button-color-font: var(--theme-color-primary);
 }
 
 @media screen
