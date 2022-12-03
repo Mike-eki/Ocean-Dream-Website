@@ -1,0 +1,38 @@
+.screen {
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-bg-fade {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-color-secondary);
+    opacity: .3;
+    z-index: -4;
+}
+
+.home-bg {
+    position: absolute;
+    top: 0; left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.home-body {
+    color: var(--theme-color-foreground);
+}
+
+.content {
+    background-color: yellowgreen;
+}
