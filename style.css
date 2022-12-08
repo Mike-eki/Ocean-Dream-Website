@@ -1,7 +1,9 @@
 .screen {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
 }
+
+/* Navigation section */
 
 .navigation {
     z-index: 10;
@@ -16,6 +18,14 @@
     list-style: none;
     gap: 2em;
 }
+
+@media (max-width: 600px) {
+    .link-options {
+        display: none;
+    }
+}
+
+/* Home section */
 
 .home {
     position: relative;
@@ -44,17 +54,104 @@
 }
 
 .home-body {
-   margin: 0 2rem;
+    display: flex;
+    margin: 0 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5em;
 }
 
 .home-body h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px); */
 }
 
-/* .home-body p{
-    width: 60ch;
-} */
+.home-body p {
+    /* font-size: clamp(12pt, 10vw, 16pt); */
+}
 
-.content {
-    background-color: yellowgreen;
+
+/* Alojamientos section */
+
+.products {
+    background-color: var(--theme-color-primary);
+}
+
+.product-header {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.product-wrapper-grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    grid-template-rows: 1fr min-content;
+    margin-inline: 1em;
+    margin-bottom: 1em;
+    grid-gap: 1em;
+}
+
+.product-card {
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    cursor: pointer;
+}
+
+.product-picture img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: .3em 0 .5em .75em;
+}
+
+/* Acerca de */
+
+.acerca-de {
+    background-color: gray;
+}
+
+.acerca-de-header {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.acerca-de-wrapper-flex {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1em;
+}
+
+.acerca-de-picture {
+    width: clamp(100px, 50vw, 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-de-picture img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    clip-path: circle();
+}
+
+.body-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.body-ch {
+    max-width: 50ch;
 }
