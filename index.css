@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+ /*
+ #FCD116 - Amarillo
+#003893 - Azul
+#CE1126 - Rojo
+  */
 :root {
-    --CLR-PRIMARY-LIGHT: rgb(240, 240, 240) !important;
-    --CLR-PRIMARY: rgba(220, 220, 220, 1) !important;
-    --CLR-PRIMARY-DARK: rgb(200, 200, 200) !important;
-    --CLR-SECONDARY-LIGHT: rgb(55, 55, 55) !important;
-    --CLR-SECONDARY: rgb(35, 35, 35) !important;
-    --CLR-SECONDARY-DARK: rgb(15, 15, 15) !important;
+    --CLR-PRIMARY-LIGHT: rgb(252, 224, 99) !important;
+    --CLR-PRIMARY: rgb(252, 209, 22) !important;
+    --CLR-PRIMARY-DARK: rgb(227, 189, 20) !important;
+    --CLR-SECONDARY-LIGHT: rgb(0, 62, 161) !important;
+    --CLR-SECONDARY: rgb(0, 56, 147) !important;
+    --CLR-SECONDARY-DARK: rgb(0, 47, 122) !important;
+
+    --CLR-NEUTRAL-100: rgb(240, 240, 240) !important;
+    --CLR-NEUTRAL-200: rgba(220, 220, 220, 1) !important;
+    --CLR-NEUTRAL-300: rgb(200, 200, 200) !important;
+    --CLR-NEUTRAL-700: rgb(55, 55, 55) !important;
+    --CLR-NEUTRAL-800: rgb(35, 35, 35) !important;
+    --CLR-NEUTRAL-900: rgb(15, 15, 15) !important;
 
     --theme-color-primary-ligth: var(--CLR-PRIMARY-LIGHT);
     --theme-color-primary: var(--CLR-PRIMARY);
@@ -13,8 +28,10 @@
     --theme-color-secondary: var(--CLR-SECONDARY);
     --theme-color-secondary-dark: var(--CLR-SECONDARY-DARK);
 
-    --theme-color-background: var(--CLR-PRIMARY);
-    --theme-color-foreground: var(--CLR-SECONDARY);
+    --theme-color-background: var(--CLR-NEUTRAL-100);
+    --theme-color-foreground: var(--CLR-NEUTRAL-900);
+
+    --theme-color-font: var(--CLR-NEUTRAL-100);
 
     --border-color: var(--theme-color-primary);
   
@@ -31,7 +48,8 @@
   
     --slope: (var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) / (var(--max-vw) - var(--min-vw));
   
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Glory', sans-serif;
     font-size: clamp(var(--min-fs-rem), var(--min-fs-rem) + var(--slope), var(--max-fs-rem));
 }
 
@@ -44,7 +62,8 @@
 }
 
 html {
-    color: var(--theme-color-secondary);
+    color: var(--theme-color-font);
+    scroll-behavior: smooth;
 }
 
 html:focus-within {
@@ -60,6 +79,8 @@ body {
 h1, h2, h3, h4, h5, h6, .invert-theme {
     --heading-color: var(--theme-color-primary);
     color: var(--heading-color);
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
 }
 
 p, span, label, small, sub {
@@ -127,8 +148,14 @@ select {
   font: inherit;
 }
 
+textarea {
+    resize: none;
+}
+
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+ul,
+ol {
   list-style: none;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,10 @@
                 <a class="link" href="#productos">Alojamientos</a>
             </li>
             <li class="option">
-                <a class="link" href="#">Acerca de</a>
+                <a class="link" href="#acerda_de">Acerca de</a>
             </li>
             <li class="option">
-                <a class="link" href="#">Contacto</a>
+                <a class="link" href="#contacto">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -34,8 +34,9 @@
         <div class="home-bg-fade"></div>
         <img class="home-bg" src="https://images.unsplash.com/photo-1593082808846-a3b870f19c83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="house and women swimming">
         <main class="home-body">
-            <h1>¡Bienvenido a Cartagena!</h1>
-            <p>El mejor lugar para quedarte. Si buscas alojamiento y no sabes donde encontrar el indicado, ¡dejanos ayudarte!</p>
+            <h1 class="home-h1"><div class="h1-div-one">¡Tu futura vivienda</div> <div class="h1-div-two">esta aqui!</div></h1>
+            <!-- <p>El mejor lugar para quedarte. Si buscas alojamiento y no sabes donde encontrar el indicado, ¡dejanos ayudarte!</p> -->
+            <p class="home-p">Te ayudamos en la busqueda de tu lugar ideal en Cartagena, para que asi encuentres ese sitio en el que quieres entrar y decir con toda tu alma: ¡Hogar, dulce hogar!</p>
             <button>¡Encuentra tu lugar!</button>
         </main>
     </section>
@@ -43,7 +44,7 @@
 
     <section id="productos" class="products">
         <header class="product-header">
-            <h2 class="invert-theme">Tu mejor lugar esta esperandote</h2>
+            <h2 class="invert-theme" style="text-align: center;">Tu mejor lugar esta esperandote</h2>
         </header>
         <div class="product-wrapper-grid">
             <article class="product-card">
@@ -52,7 +53,7 @@
                 </picture>
                 <div class="product-body">
                     <h3 class="invert-theme">Apartamentos</h3>
-                    <p class="invert-theme">Seguro te van a encantar</p>
+                    <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
             <article class="product-card">
@@ -61,7 +62,7 @@
                 </picture>
                 <div class="product-body">
                     <h3 class="invert-theme">Casas</h3>
-                    <p class="invert-theme">Seguro te van a encantar</p>
+                    <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
             <article class="product-card">
@@ -70,22 +71,23 @@
                 </picture>
                 <div class="product-body">
                     <h3 class="invert-theme">Duplex</h3>
-                    <p class="invert-theme">Seguro te van a encantar</p>
+                    <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
         </div>
     </section>
 
 
-    <section class="acerca-de">
+    <section id="acerda_de" class="acerca-de">
         <header class="acerca-de-header">
-            <h2>Acerca de nosotros</h2>
+            
         </header>
         <div class="acerca-de-wrapper-flex">
             <picture class="acerca-de-picture">
                 <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="about us">
             </picture>
             <div class="body-flex">
+                <h2 class="body-title">Acerca de nosotros</h2>
                 <p class="body-ch">Tenemos 10 años de experiencia en brindar los mejores lugares a toda persona. Hemos acortado la busqueda del sitio de los sueños de cada soñador, el lugar donde siempre quisieron vivir, nos encargamos de hacerlo realidad.</p>
                 <p class="body-ch">Nos encanta poder entregar esa ambición en las manos de nuestros clientes, con forma de llave y dar un nuevo comienzo de un nuevo capitulo en sus vidas.</p
             </div>
@@ -93,47 +95,76 @@
     </section>
 
 
-    <section class="contacto screen">
-        <header>
-            <h2 class="invert-theme">¡Di hola!</h2>
-        </header>
-        <div>
-            <form>
-                <input type="text">
-                <input type="email">
-                <textarea name="" id=""></textarea>
+    <section id="contacto" class="contacto screen">
+        <div class="contacto-info">
+            <header class="contacto-header">
+                <h2 class="invert-theme">Contacto</h2>
+            </header>
+            <div class="contacto-social">
+                <p class="social-body invert-theme">Saludanos por estas redes</p>
+                <ul class="social-media">
+                    <a href="#">
+                        <img class="social-img" src="assets/svg/instagram.svg">
+                    </a>
+                    <a href="#">
+                        <img class="social-img" src="assets/svg/whatsapp.svg">
+                    </a>
+                    <a href="#">
+                        <img class="social-img" src="assets/svg/facebook.svg">
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="contacto-container-form">
+            <form class="contacto-form">
+                <h3 class="say-hi">¡Di hola!</h3>
+                <!-- <label class="form-label" for="Username">Nombre
+                    <input class="form-input" name="Username" type="text">
+                </label> -->
+                <label class="form-label" for="Email">Email
+                    <input class="form-input" name="Email" type="email">
+                </label>
+                <label class="form-label" for="Message">Mensaje
+                    <textarea class="form-textarea" name="Message" id=""></textarea>
+                </label>
+                <button type="submit" class="form-submit">¡Saludar!</button>
             </form>
         </div>
     </section>
 
 
-    <section class="footer-page screen">
-        <h2 class="invert-theme">Menu</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Alojamientos</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-        <h2 class="invert-theme">Alojamientos</h2>
-        <ul>
-            <li><a href="#">Casas</a></li>
-            <li><a href="#">Duplex</a></li>
-            <li><a href="#">Apartamentos</a></li>
-        </ul>
-        <small>Copyright © 2022 CartagenaAlojamientos</small>
-        <ul>
-            <li><a href="#">Casas</a></li>
-            <li><a href="#">Duplex</a></li>
-            <li><a href="#">Apartamentos</a></li>
-        </ul>
-        <small>Cartagena, Colombia</small>
-        <ul>
-            <li>Tamales 1856</li>
-            <li>+57 6321 5465 31</a></li>
-            <li><a href="mailto:email@col.com?subject=¡Digo%20hola!&body=Me%20gustaria%20poder%20conversar%20con%20ustedes...">Email</a></li>
-        </ul>
-        <small>Pagina creada por Miqueas Moreno con mucho ❤️</small>
+    <section class="footer-page">
+        <div class="footer-links">
+            <div>
+                <h3>Cartagena, Colombia</h3>
+                <ul style="color: rgb(200,200,200)">
+                    <li>Cra. 66a #19-231 a 19-1</li>
+                    <li>+57 6321 5465 31</a></li>
+                    <li><a href="mailto:email@col.com?subject=¡Hola!&body=Me%20gustaria%20poder%20conversar%20con%20ustedes...">Email</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Alojamientos</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Alojamientos</h3>
+                <ul>
+                    <li><a href="#">Casas</a></li>
+                    <li><a href="#">Duplex</a></li>
+                    <li><a href="#">Apartamentos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-details">
+            <small>Copyright © 2022 CartagenaAlojamientos</small>
+            <small>Pagina creada por Miqueas Moreno con mucho ❤️</small>
+        </div>
     </section>
 
 
