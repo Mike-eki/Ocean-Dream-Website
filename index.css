@@ -1,41 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
- /*
- #FCD116 - Amarillo
-#003893 - Azul
-#CE1126 - Rojo
-  */
 :root {
-    --CLR-PRIMARY-LIGHT: rgb(252, 224, 99) !important;
-    --CLR-PRIMARY: rgb(252, 209, 22) !important;
-    --CLR-PRIMARY-DARK: rgb(227, 189, 20) !important;
-    --CLR-SECONDARY-LIGHT: rgb(0, 62, 161) !important;
-    --CLR-SECONDARY: rgb(0, 56, 147) !important;
-    --CLR-SECONDARY-DARK: rgb(0, 47, 122) !important;
 
-    --CLR-NEUTRAL-100: rgb(240, 240, 240) !important;
-    --CLR-NEUTRAL-200: rgba(220, 220, 220, 1) !important;
-    --CLR-NEUTRAL-300: rgb(200, 200, 200) !important;
+    /* CONSTANTS */
+
+    --CLR-PRIMARY-700: rgb(255, 228, 110) !important;
+    --CLR-PRIMARY-600: rgb(255, 220, 69) !important;
+    --CLR-PRIMARY-500: rgb(252, 209, 22) !important;
+    --CLR-PRIMARY-400: rgb(205, 167, 1) !important;
+    --CLR-PRIMARY-300: rgb(162, 131, 0) !important;
+
+    --CLR-SECONDARY-700: rgb(4, 100, 251) !important;
+    --CLR-SECONDARY-600: rgb(0, 73, 188) !important;
+    --CLR-SECONDARY-500: rgb(0, 56, 147) !important;
+    --CLR-SECONDARY-400: rgb(0, 46, 118) !important;
+    --CLR-SECONDARY-300: rgb(0, 33, 86) !important;
+
+    --CLR-TERTIARY-700: #F56475 !important;
+    --CLR-TERTIARY-600: #E4394D !important;
+    --CLR-TERTIARY-500: #CE1127 !important;
+    --CLR-TERTIARY-400: #A60417 !important;
+    --CLR-TERTIARY-300: #80000F !important;
+
+    --CLR-NEUTRAL-100: rgb(245, 245, 245) !important;
+    --CLR-NEUTRAL-200: rgb(220, 220, 220) !important;
+    --CLR-NEUTRAL-300: rgb(205, 205, 205) !important;
     --CLR-NEUTRAL-700: rgb(55, 55, 55) !important;
-    --CLR-NEUTRAL-800: rgb(35, 35, 35) !important;
+    --CLR-NEUTRAL-800: rgb(30, 30, 30) !important;
     --CLR-NEUTRAL-900: rgb(15, 15, 15) !important;
 
-    --theme-color-primary-ligth: var(--CLR-PRIMARY-LIGHT);
-    --theme-color-primary: var(--CLR-PRIMARY);
-    --theme-color-primary-dark: var(--CLR-PRIMARY-DARK);
-    --theme-color-secondary-ligth: var(--CLR-SECONDARY-LIGHT);
-    --theme-color-secondary: var(--CLR-SECONDARY);
-    --theme-color-secondary-dark: var(--CLR-SECONDARY-DARK);
+    /* Themes */
 
-    --theme-color-background: var(--CLR-NEUTRAL-100);
-    --theme-color-foreground: var(--CLR-NEUTRAL-900);
+    --theme-main-light: var(--CLR-PRIMARY-700);
+    --theme-main: var(--CLR-PRIMARY-500);
+    --theme-main-dark: var(--CLR-PRIMARY-300);
+    
+    --theme-alternative-light: var(--CLR-SECONDARY-700);
+    --theme-alternative: var(--CLR-SECONDARY-500);
+    --theme-alternative-dark: var(--CLR-SECONDARY-300);
 
-    --theme-color-font: var(--CLR-NEUTRAL-100);
+    --theme-additional-light: var(--CLR-TERTIARY-700);
+    --theme-additional: var(--CLR-TERTIARY-500);
+    --theme-additional-dark: var(--CLR-TERTIARY-300);
 
-    --border-color: var(--theme-color-primary);
-  
-    --width-3-quarter: calc(var(--WIDTH-THREE-QUARTER));
+    --theme-light: var(--CLR-NEUTRAL-100);
+    --theme-dark: var(--CLR-NEUTRAL-900);
+
+    /* Cubic Bazer */
+
+    --fast: cubic-bezier(0,.50,.50,1);
+    --slow: cubic-bezier(.5,0,1,.5);
+
+    /* Responsive Font Settings */
 
     --min-fs: 1;
     --max-fs: 1.550;
@@ -48,7 +64,8 @@
   
     --slope: (var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) / (var(--max-vw) - var(--min-vw));
   
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* Applying Resposiveness to the font */
+
     font-family: 'Glory', sans-serif;
     font-size: clamp(var(--min-fs-rem), var(--min-fs-rem) + var(--slope), var(--max-fs-rem));
 }
@@ -62,8 +79,7 @@
 }
 
 html {
-    color: var(--theme-color-font);
-    scroll-behavior: smooth;
+    color: var(--theme-light);
 }
 
 html:focus-within {
@@ -71,70 +87,69 @@ html:focus-within {
 }
 
 body {
-    background-color: var(--theme-color-background);
+    background-color: var(--theme-light);
     text-rendering: optimizeSpeed;
     min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, .invert-theme {
-    --heading-color: var(--theme-color-primary);
+    --heading-color: var(--theme-main);
     color: var(--heading-color);
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
 }
 
 p, span, label, small, sub {
-    --body-color: var(--theme-color-primary-dark);
-    color: var(--body-color);
+    --font-color: var(--theme-ligth);
+    color: var(--font-color);
 }
   
 .invert-theme {
-    --heading-color: var(--theme-color-secondary);
+    --heading-color: var(--theme-alternative);
 }
 
 nav {
     --nav-padding: .5rem 1em;
-    --nav-background: var(--theme-color-secondary);
+    --nav-background: var(--theme-alternative);
     
     padding: var(--nav-padding);
     background-color: var(--nav-background);
-
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    top: 0; left: 0; right: 0;
 }
 
 a {
-    --link-color: var(--theme-color-primary-dark);
+    --link-color: var(--theme-main);
     text-decoration: none;
     color: var(--link-color)
 }
 
 a:not([class]) {
     text-decoration-skip-ink: auto;
-  }
+}
 
 button, .button  {
-    --button-background: var(--theme-color-primary);
-    --button-color-font: var(--theme-color-secondary);
+    --button-background: var(--theme-main);
+    --button-color-font: var(--theme-alternative);
     --button-padding: .5rem 1rem;
     --button-border-radius: 10px;
-    --button-font-weight: bold;
+    --button-font-size: 1rem;
 
     background-color: var(--button-background);
     color: var( --button-color-font);
-    padding: var(--button-padding);
-    border-radius: var(--button-border-radius);
-    font-weight: var(--button-font-weight);
 
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    font-family: 'Fredoka One', cursive;
+    
     border: none;
-    font-size: var(--font-size);
+    border-radius: var(--button-border-radius);
+
+    transition:
+        color 500ms var(--fast),
+        background-color 500ms var(--fast);
 }
 button:hover, .button:hover {
-    --button-background: var(--theme-color-secondary);
-    --button-color-font: var(--theme-color-primary);
+    --button-background: var(--theme-alternative);
+    --button-color-font: var(--theme-main);
 }
 
 img, picture, svg, video {
