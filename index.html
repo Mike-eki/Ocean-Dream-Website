@@ -30,29 +30,56 @@
     </nav>
 
     
-    <section id="home" class="home screen">
+    <section id="home" class="home">
         <div class="home-bg-fade"></div>
         <img class="home-bg" src="https://images.unsplash.com/photo-1593082808846-a3b870f19c83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="house and women swimming">
-        <main class="home-body">
+        <main class="home-body m-horizontal-xx">
             <h1 class="home-h1"><div class="h1-div-one">¡Tu futura vivienda</div> <div class="h1-div-two">esta aqui!</div></h1>
             <!-- <p>El mejor lugar para quedarte. Si buscas alojamiento y no sabes donde encontrar el indicado, ¡dejanos ayudarte!</p> -->
             <p class="home-p">Te ayudamos en la busqueda de tu lugar ideal en Cartagena, para que asi encuentres ese sitio en el que quieres entrar y decir con toda tu alma: <i>¡Hogar, dulce hogar!</i></p>
             <button class="home-btn">¡Encuentra tu lugar!</button>
         </main>
+        <div class="waves-container">
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(63, 81, 181, 0.7)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(92, 107, 192, 0.5)" data-darkreader-inline-fill="" style="--darkreader-inline-fill:rgba(24, 26, 27, 0.5);"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(121, 134, 203, 0.3)" data-darkreader-inline-fill="" style="--darkreader-inline-fill:rgba(24, 26, 27, 0.3);"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(57, 73, 171)" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#181a1b;"></use>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <section class="services screen">
+        <h2>Esto es lo que podes hacer</h2>
+        <div>
+            <h3>Comprar</h3>
+            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+        </div>
+        <div>
+            <h3>Rentar</h3>
+            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+        </div>
+        <div>
+            <h3>Invertir</h3>
+            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+        </div>
     </section>
 
 
     <section id="productos" class="products">
         <header class="product-header">
-            <h2 class="invert-theme" style="text-align: center;">Tu mejor lugar esta esperandote</h2>
+            <h2 class="invert-theme p-all">Tu mejor lugar esta esperandote</h2>
         </header>
-        <div class="product-wrapper-grid">
+        <div class="product-grid m-horizontal p-vertical">
             <article class="product-card">
                 <picture class="product-picture">
                     <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="apartamentos">
                 </picture>
                 <div class="product-body">
-                    <h3 class="invert-theme">Apartamentos</h3>
+                    <h3 class="">Apartamentos</h3>
                     <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
@@ -61,7 +88,7 @@
                     <img src="https://images.unsplash.com/photo-1523745663588-1bfa973c9b35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="casa">
                 </picture>
                 <div class="product-body">
-                    <h3 class="invert-theme">Casas</h3>
+                    <h3 class="">Casas</h3>
                     <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
@@ -70,7 +97,7 @@
                     <img src="https://images.unsplash.com/photo-1643297551340-19d8ad4f20ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="duplex">
                 </picture>
                 <div class="product-body">
-                    <h3 class="invert-theme">Duplex</h3>
+                    <h3 class="">Duplex</h3>
                     <!-- <p class="invert-theme">Seguro te van a encantar</p> -->
                 </div>
             </article>
@@ -79,10 +106,7 @@
 
 
     <section id="acerda_de" class="acerca-de">
-        <header class="acerca-de-header">
-            
-        </header>
-        <div class="acerca-de-wrapper-flex">
+        <div class="acerca-de-wrapper-flex m-horizontal-x p-vertical">
             <picture class="acerca-de-picture">
                 <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="about us">
             </picture>
@@ -91,6 +115,18 @@
                 <p class="body-ch">Tenemos 10 años de experiencia en brindar los mejores lugares a toda persona. Hemos acortado la busqueda del sitio de los sueños de cada soñador, el lugar donde siempre quisieron vivir, nos encargamos de hacerlo realidad.</p>
                 <p class="body-ch">Nos encanta poder entregar esa ambición en las manos de nuestros clientes, con forma de llave y dar un nuevo comienzo de un nuevo capitulo en sus vidas.</p
             </div>
+        </div>
+        <div>
+            <h3 class="body-title">Tus asesores</h3>
+            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            <p>Elizabeth Del Carmen Martinez Rui</p>
+            <small>Dueña</small>
+            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            <p>Kevin Martinez</p>
+            <small>Asesor inmobiliario</small>
+            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            <p>San Pedro</p>
+            <small>Asesor financiero</small>
         </div>
     </section>
 
@@ -162,7 +198,7 @@
             </div>
         </div>
         <div class="small-details">
-            <small>Copyright © 2022 CartagenaAlojamientos</small>
+            <small>Copyright © 2022 OceanDream</small>
             <small>Pagina creada por Miqueas Moreno con mucho ❤️</small>
         </div>
     </section>
