@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*
 #B1C1D0
 #8DB5D0
@@ -96,7 +95,7 @@
   /* Typographies */
 
   --f-family-primary: "Glory", sans-serif;
-  --f-family-secondary: "Fredoka One", cursive;
+  --f-family-secondary: 'Bree Serif', serif;
 }
 
 *,
@@ -146,6 +145,7 @@ small,
 sub {
   --font-color: var(--theme-ligth);
   color: var(--font-color);
+  display: block;
 }
 
 .invert-theme {
@@ -217,12 +217,17 @@ nav {
 }
 
 .p-vertical {
-    --p-top: 1rem;
-    --p-bottom: 1rem;
+  --p-top: 1rem;
+  --p-bottom: 1rem;
+}
+
+.p-horizontal {
+  --p-left: 1rem;
+  --p-right: 1rem;
 }
 
 .p-bottom {
-    --p-bottom: 1rem;
+  --p-bottom: 1rem;
 }
 
 a {
@@ -247,13 +252,15 @@ button,
   --button-padding: 0.5rem 1rem;
   --button-border-radius: 10px;
   --button-font-size: 1rem;
+  --button-font-weight: 700;
 
   background-color: var(--button-background);
   color: var(--button-color-font);
 
   padding: var(--button-padding);
   font-size: var(--button-font-size);
-  font-family: "Fredoka One", cursive;
+  font-weight: var(--button-font-weight);
+  font-family: var(--f-family-primary);
 
   border: none;
   border-radius: var(--button-border-radius);

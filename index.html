@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
-    <title>Cartagena Alojamientos</title>
+    <title>OceanDream</title>
 </head>
 <body>
     
@@ -53,24 +53,31 @@
     </section>
 
     <section class="services screen">
-        <h2>Esto es lo que podes hacer</h2>
-        <div>
-            <h3>Comprar</h3>
-            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
-        </div>
-        <div>
-            <h3>Rentar</h3>
-            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
-        </div>
-        <div>
-            <h3>Invertir</h3>
-            <p class="invert-theme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
-        </div>
+        <header class="center-text p-all">
+            <h2>Esto es lo que podes hacer</h2>
+        </header>
+        <main class="service-cards-container p-horizontal">
+            <article class="service-card">
+                <h3>Comprar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+                <a href="#">Conoce mas 🡭</a>
+            </article>
+            <article class="service-card">
+                <h3>Rentar</h3>
+                <p>Lorem ipsum dolor consectetur adipisicing ipsum dolor consectetur adipisicing ipsum dolor consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+                <a href="#">Conoce mas 🡭</a>
+            </article>
+            <article class="service-card">
+                <h3>Invertir</h3>
+                <p>Lorem ipsum dolor sit amet Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
+                <a href="#">Conoce mas 🡭</a>
+            </article>
+        </main>
     </section>
 
 
     <section id="productos" class="products">
-        <header class="product-header">
+        <header class="center-text">
             <h2 class="invert-theme p-all">Tu mejor lugar esta esperandote</h2>
         </header>
         <div class="product-grid m-horizontal p-vertical">
@@ -118,15 +125,38 @@
         </div>
         <div>
             <h3 class="body-title">Tus asesores</h3>
-            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-            <p>Elizabeth Del Carmen Martinez Rui</p>
-            <small>Dueña</small>
-            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-            <p>Kevin Martinez</p>
-            <small>Asesor inmobiliario</small>
-            <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-            <p>San Pedro</p>
-            <small>Asesor financiero</small>
+            <div class="persons p-horizontal">
+                <figure class="person">
+                    <picture class="person-container">
+                        <img class="circle-bg" src="/assets/img/background1.jpg" alt="">
+                        <img class="person-img custom-person-1" src="/assets/img/person1.png" alt="Someone" srcset="">
+                    </picture>
+                    <div class="person-body p-vertical">
+                        <h4 class="center-text">Elizabeth Del Carmen <div>Martinez Rui</div></h4>
+                        <small class="center-text">Dueña</small>
+                    </div>
+                </figure>
+                <figure class="person">
+                    <picture class="person-container">
+                        <img class="circle-bg" src="/assets/img/background2.jpg" alt="">
+                        <img class="person-img custom-person-2" src="/assets/img/person2.png" alt="Someone" srcset="">
+                    </picture>
+                    <div class="person-body p-vertical">
+                        <h4 class="center-text">Kevin Martinez</h4>
+                        <small class="center-text">Asesor inmobiliario</small>
+                    </div>
+                </figure>
+                <figure class="person">
+                    <picture class="person-container">
+                        <img class="circle-bg" src="/assets/img/background3.jpg" alt="">
+                        <img class="person-img custom-person-3" src="/assets/img/person3.png" alt="Someone" srcset="">
+                    </picture>
+                    <div class="person-body p-vertical">
+                        <h4 class="center-text">San Pedro</h4>
+                        <small class="center-text">Asesor financiero</small>
+                    </div>
+                </figure>
+                
         </div>
     </section>
 
