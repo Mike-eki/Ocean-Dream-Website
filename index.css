@@ -232,7 +232,6 @@ nav {
 
 a {
   --link-color: var(--theme-main);
-  display: block;
   text-decoration: none;
   color: var(--link-color);
 }
