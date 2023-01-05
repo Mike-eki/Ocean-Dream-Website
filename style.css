@@ -222,7 +222,7 @@
   flex-basis: 300px;
   flex-grow: 1;
   align-self: stretch;
-  border-radius: 1rem;
+  border-radius: 0.50rem;
 }
 
 /* Alojamientos section */
