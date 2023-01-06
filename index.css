@@ -30,7 +30,7 @@
   --CLR-TERTIARY-400: #ef5350 !important;
   --CLR-TERTIARY-300: #e57373 !important;
 
-  --CLR-NEUTRAL-100: rgb(245, 245, 245) !important;
+  --CLR-NEUTRAL-100: rgb(235, 235, 235) !important;
   --CLR-NEUTRAL-200: rgb(220, 220, 220) !important;
   --CLR-NEUTRAL-300: rgb(205, 205, 205) !important;
   --CLR-NEUTRAL-700: rgb(55, 55, 55) !important;
@@ -108,7 +108,7 @@
 }
 
 html {
-  color: var(--theme-light);
+  color: var(--theme-lighter);
 }
 
 html:focus-within {
@@ -116,7 +116,7 @@ html:focus-within {
 }
 
 body {
-  background-color: var(--theme-light);
+  background-color: var(--theme-lighter);
   text-rendering: optimizeSpeed;
   min-height: 100vh;
 
