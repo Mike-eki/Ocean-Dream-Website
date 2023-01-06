@@ -221,9 +221,9 @@
   background-color: var(--theme-alternative);
   max-width: 450px;
   flex-basis: 300px;
+  border-radius: 15px;
   flex-grow: 1;
   align-self: stretch;
-  border-radius: 30px;
 }
 
 /* Alojamientos section */
@@ -475,7 +475,6 @@
 
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1rem;
 }
