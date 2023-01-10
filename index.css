@@ -18,11 +18,11 @@
   --CLR-PRIMARY-400: #ffee58 !important;
   --CLR-PRIMARY-300: #fff176 !important;
 
-  --CLR-SECONDARY-700: rgb(48, 63, 159) !important;
+  --CLR-SECONDARY-700: #303f9f !important;
   --CLR-SECONDARY-600: rgb(57, 73, 171) !important;
-  --CLR-SECONDARY-500: rgb(63, 81, 181) !important;
+  --CLR-SECONDARY-500: #3f51b5 !important;
   --CLR-SECONDARY-400: rgb(92, 107, 192) !important;
-  --CLR-SECONDARY-300: rgb(121, 134, 203) !important;
+  --CLR-SECONDARY-300: #7986cb !important;
 
   --CLR-TERTIARY-700: #d32f2f !important;
   --CLR-TERTIARY-600: #e53935 !important;
@@ -67,7 +67,7 @@
 
   /* Cubic Bazer */
 
-  --fast: cubic-bezier(0, 0.5, 0.5, 1);
+  --fast: cubic-bezier(0, 0.5, 0.5, 1); 
   --slow: cubic-bezier(0.5, 0, 1, 0.5);
 
   /* Responsive Font Settings */
@@ -165,6 +165,7 @@ nav {
 .m-vertical,
 .m-vertical-x,
 .m-vertical-xx,
+.m-bottom,
 .p-all,
 .p-horizontal,
 .p-horizontal-x,
@@ -172,7 +173,9 @@ nav {
 .p-vertical,
 .p-vertical-x,
 .p-vertical-xx,
-.p-bottom {
+.p-top,
+.p-bottom,
+.f-gap {
   --p-top: 0rem;
   --p-right: 0rem;
   --p-bottom: 0rem;
@@ -194,6 +197,15 @@ nav {
   gap: var(--container-gap);
 }
 
+.f-gap {
+  --gap: 0.25rem;
+}
+
+.m-vertical-x {
+  --m-top: 1.5rem;
+  --m-bottom: 1.5rem;
+}
+
 .m-horizontal {
   --m-right: 1rem;
   --m-left: 1rem;
@@ -209,11 +221,22 @@ nav {
   --m-left: 2rem;
 }
 
+.m-bottom {
+  --m-bottom: 1rem;
+}
+
 .p-all {
   --p-top: 1rem;
   --p-left: 1rem;
   --p-bottom: 1rem;
-  --p-rigth: 1rem;
+  --p-right: 1rem;
+}
+
+.p-all-x {
+  --p-top: 1.5rem;
+  --p-left: 1.5rem;
+  --p-bottom: 1.5rem;
+  --p-right: 1.5rem;
 }
 
 .p-vertical {
@@ -226,14 +249,17 @@ nav {
   --p-right: 1rem;
 }
 
+.p-top {
+  --p-top: 1rem;
+}
+
 .p-bottom {
   --p-bottom: 1rem;
 }
 
 a {
-  --link-color: var(--theme-main);
   text-decoration: none;
-  color: var(--link-color);
+  cursor: pointer;
 }
 
 p a {
@@ -247,7 +273,7 @@ a:not([class]) {
 button,
 .button {
   --button-background: var(--theme-main);
-  --button-color-font: var(--theme-alternative);
+  --button-color-font: var(--theme-alternative-dark);
   --button-padding: 0.5rem 1rem;
   --button-border-radius: 10px;
   --button-font-size: 1rem;
@@ -262,14 +288,44 @@ button,
   font-family: var(--f-family-primary);
 
   border: none;
+  outline: transparent;
   border-radius: var(--button-border-radius);
-
-  transition: color 500ms var(--fast), background-color 500ms var(--fast);
+  
+  cursor: pointer;
+	display: block;
+	position: relative;
+  z-index: 1;
+  
+  transition: 
+    color 500ms var(--fast), 
+    background-color 500ms var(--fast),
+    outline 200ms var(--fast);
 }
 button:hover,
 .button:hover {
-  --button-background: var(--theme-alternative);
+  outline: 2px solid var(--button-color-font);
   --button-color-font: var(--theme-main);
+}
+
+button:hover::before {
+  left: 0%;
+	right: auto;
+	width: 100%;
+}
+
+button::before {
+  display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: var(--theme-main);
+	background: var(--theme-alternative);
+  border-radius: calc(var(--button-border-radius) - 2px);
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 img,

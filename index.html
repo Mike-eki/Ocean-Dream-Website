@@ -12,7 +12,12 @@
     
 
     <nav class="navigation">
-        <div class="logo">LOGO</div>
+        <a class="logo-container f-gap">
+            <picture class="logo-img">
+                <img class="logo" src="/assets/svg/logo.svg" alt="">
+            </picture>
+            <strong>OceanDream</strong>
+        </a>
         <ul class="link-options">
             <li class="option">
                 <a class="link" href="#home">Home</a>
@@ -36,7 +41,7 @@
         <main class="home-body m-horizontal-xx">
             <h1 class="home-h1"><div class="h1-div-one">¡Tu futura vivienda</div> <div class="h1-div-two">esta aqui!</div></h1>
             <!-- <p>El mejor lugar para quedarte. Si buscas alojamiento y no sabes donde encontrar el indicado, ¡dejanos ayudarte!</p> -->
-            <p class="home-p">Te ayudamos en la busqueda de tu lugar ideal en Cartagena, para que asi encuentres ese sitio en el que quieres entrar y decir con toda tu alma: <i>¡Hogar, dulce hogar!</i></p>
+            <p class="home-p">Te ayudamos en la busqueda de tu lugar ideal en Cartagena, para que asi encuentres ese sitio en el que quieres entrar y decir con toda tu alma: <em>¡Hogar, dulce hogar!</em></p>
             <button class="home-btn">¡Encuentra tu lugar!</button>
         </main>
         <div class="waves-container">
@@ -55,8 +60,9 @@
     <section class="services screen">
         <header class="center-text p-vertical m-horizontal">
             <h2>Esto es lo que podes hacer</h2>
+            <span class="line-section"></span>
         </header>
-        <main class="service-cards-container p-horizontal p-bottom">
+        <main class="service-cards-container p-horizontal p-vertical" >
             <article class="service-card p-all">
                 <h3>Comprar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita officia nihil! Exercitationem ipsum amet sequi, dolorem sunt laboriosam voluptas nesciunt porro corrupti eum nostrum esse pariatur ratione unde quis?</p>
@@ -79,8 +85,9 @@
     <section id="productos" class="products">
         <header class="center-text p-vertical m-horizontal">
             <h2>Tu mejor lugar esta esperandote</h2>
+            <span class="line-section"></span>
         </header>
-        <div class="product-grid m-horizontal p-bottom">
+        <div class="product-grid m-horizontal p-vertical">
             <article class="product-card">
                 <picture class="product-picture">
                     <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="apartamentos">
@@ -118,7 +125,10 @@
                 <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="about us">
             </picture>
             <div class="body-flex">
-                <h2 class="body-title">Acerca de nosotros</h2>
+                <header class="center-text">
+                    <h2>Acerca de nosotros</h2>
+                    <span class="line-section"></span>
+                </header>
                 <p class="body-ch">Tenemos 10 años de experiencia en brindar los mejores lugares a toda persona. Hemos acortado la busqueda del sitio de los sueños de cada soñador, el lugar donde siempre quisieron vivir, nos encargamos de hacerlo realidad.</p>
                 <p class="body-ch">Nos encanta poder entregar esa ambición en las manos de nuestros clientes, con forma de llave y dar un nuevo comienzo de un nuevo capitulo en sus vidas.</p
             </div>
@@ -128,48 +138,50 @@
     <section class="asesores">
         <header class="center-text p-vertical m-horizontal">
             <h2>Tus asesores</h2>
+            <span class="line-section"></span>
         </header>
-        <div class="persons p-horizontal">
+        <div class="persons p-horizontal p-bottom">
             <figure class="person">
                 <picture class="person-container">
                     <img class="circle-bg" src="/assets/img/background1.jpg" alt="">
-                    <img class="person-img custom-person-1" src="/assets/img/person1.png" alt="Someone" srcset="">
+                    <img class="person-img custom-person-1" src="/assets/img/person1.webp" alt="Someone" srcset="">
                 </picture>
                 <div class="person-body p-vertical">
-                    <h4 class="center-text">Elizabeth Del Carmen <div>Martinez Rui</div>
-                    </h4>
+                    <h3 class="center-text">Elizabeth Del Carmen <div>Martinez Rui</div>
+                    </h3>
                     <small class="center-text">Dueña</small>
                 </div>
             </figure>
             <figure class="person">
                 <picture class="person-container">
                     <img class="circle-bg" src="/assets/img/background2.jpg" alt="">
-                    <img class="person-img custom-person-2" src="/assets/img/person2.png" alt="Someone" srcset="">
+                    <img class="person-img custom-person-2" src="/assets/img/person2.webp" alt="Someone" srcset="">
                 </picture>
                 <div class="person-body p-vertical">
-                    <h4 class="center-text">Kevin Martinez</h4>
+                    <h3 class="center-text">Kevin Martinez</h3>
                     <small class="center-text">Asesor inmobiliario</small>
                 </div>
             </figure>
             <figure class="person">
                 <picture class="person-container">
                     <img class="circle-bg" src="/assets/img/background3.jpg" alt="">
-                    <img class="person-img custom-person-3" src="/assets/img/person3.png" alt="Someone" srcset="">
+                    <img class="person-img custom-person-3" src="/assets/img/person3.webp" alt="Someone" srcset="">
                 </picture>
                 <div class="person-body p-vertical">
-                    <h4 class="center-text">San Pedro</h4>
+                    <h3 class="center-text">San Pedro</h3>
                     <small class="center-text">Asesor financiero</small>
                 </div>
             </figure>
     </section>
 
 
-    <section id="contacto" class="contacto screen">
+    <section id="contacto" class="contacto">
         <div class="contacto-info">
             <header class="contacto-header">
                 <h2>Contacto</h2>
+                <span class="line-section"></span>
             </header>
-            <div class="contacto-social">
+            <div class="contacto-social m-bottom">
                 <p class="social-body">Saludanos por estas redes</p>
                 <ul class="social-media">
                     <a href="#">
@@ -184,59 +196,81 @@
                 </ul>
             </div>
         </div>
-        <div class="contacto-container-form">
-            <form class="contacto-form">
-                <h3 class="say-hi">¡Di hola!</h3>
-                <!-- <label class="form-label" for="Username">Nombre
-                    <input class="form-input" name="Username" type="text">
-                </label> -->
-                <label class="form-label" for="Email">Email
-                    <input class="form-input" name="Email" type="email">
-                </label>
-                <label class="form-label" for="Message">Mensaje
-                    <textarea class="form-textarea" name="Message" id=""></textarea>
-                </label>
-                <button type="submit" class="form-submit">¡Saludar!</button>
-            </form>
-        </div>
+    </section>
+
+    <section class="formulario">
+        <form class="form-container p-all-x m-vertical-x">
+            <header class="center-text">
+                <h2>¡Di hola!</h2>
+                <span class="line-section"></span>
+            </header>
+            <label class="form-label" for="Email">Email
+                <input class="form-input" name="Email" type="email">
+            </label>
+            <label class="form-label" for="Message">Mensaje
+                <textarea class="form-textarea" name="Message" id=""></textarea>
+            </label>
+            <button type="submit" class="form-submit">¡Saludar!</button>
+        </form>
     </section>
 
 
     <section class="footer-page">
-        <div class="footer-links">
-            <div>
-                <h3>Siguenos</h3>
-                <ul>
-                    <li><a href="mailto:email@col.com?subject=¡Hola!&body=Me%20gustaria%20poder%20conversar%20con%20ustedes...">Email</a></li>
-                    
-                </ul>
-                <span>
-                    Cartagena, Colombia<br>
-                    Cra. 66a #19-231 a 19-1<br>
-                    +57 6321 5465 31<br>
-                </span>
+        <div class="p-vertical m-horizontal">
+            <div class="footer-wrapper-links p-bottom">
+                    <div class="footer-links">
+                        <a class="logo-container f-gap">
+                            <picture class="logo-img">
+                                <img class="logo" src="/assets/svg/logo.svg" alt="">
+                            </picture>
+                            <strong>OceanDream</strong>
+                        </a>
+                        <q><i>Lugar que quieres,<br>lugar que encuentras</i></q>
+                    </div>
+                    <div class="footer-links">
+                        <header class="m-bottom">
+                            <h3>Siguenos</h3>
+                            <span class="line-section-left"></span>
+                        </header>
+                        <ul>
+                            <li><i><span class="blockspam" aria-hidden="true">I SEE YOU BOT!</span>ocean@<!--as2390 -!- asdj4321-->dream.com</i></li>
+                            <li>
+                                <address>
+                                    Cartagena, Colombia<br>
+                                    Cra. 66a #19-231 a 19-1<br>
+                                    +57 6321 5465 31<br>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <header class="m-bottom">
+                            <h3>Menu</h3>
+                            <span class="line-section-left"></span>
+                        </header>
+                        <ul>
+                            <li><a href="#" class="link">Home</a></li>
+                            <li><a href="#" class="link">Alojamientos</a></li>
+                            <li><a href="#" class="link">Acerca de</a></li>
+                            <li><a href="#" class="link">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <header class="m-bottom">
+                            <h3>Alojamientos</h3>
+                            <span class="line-section-left"></span>
+                        </header>
+                        <ul>
+                            <li><a href="#" class="link">Casas</a></li>
+                            <li><a href="#" class="link">Duplex</a></li>
+                            <li><a href="#" class="link">Apartamentos</a></li>
+                        </ul>
+                    </div>
             </div>
-            <div>
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Alojamientos</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Alojamientos</h3>
-                <ul>
-                    <li><a href="#">Casas</a></li>
-                    <li><a href="#">Duplex</a></li>
-                    <li><a href="#">Apartamentos</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="small-details">
-            <small>Copyright © 2022 OceanDream</small>
-            <small>Pagina creada por Miqueas Moreno con mucho ❤️</small>
+                <div class="small-details p-top">
+                    <small>Copyright © 2022 OceanDream</small>
+                    <small>Pagina creada por <br>Miqueas Moreno con mucho <span class="heart"><img src="/assets/svg/heart.svg" alt=""></span></small>
+                </div>
         </div>
     </section>
 
