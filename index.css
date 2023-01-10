@@ -171,6 +171,7 @@ nav {
 .m-vertical-x,
 .m-vertical-xx,
 .m-bottom,
+.p-all-s,
 .p-all,
 .p-horizontal,
 .p-horizontal-x,
@@ -229,6 +230,13 @@ nav {
 
 .m-bottom {
   --m-bottom: 1rem;
+}
+
+.p-all-s {
+  --p-top: 0.5rem;
+  --p-left: 0.5rem;
+  --p-bottom: 0.5rem;
+  --p-right: 0.5rem;
 }
 
 .p-all {
@@ -352,6 +360,24 @@ input,
 textarea,
 select {
   font: inherit;
+  color: var(--theme-semilight);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  min-height: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.75rem;
+  outline: none;
+  background: none;
+  background-color: var(--theme-alternative-darker);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--theme-main);
 }
 
 textarea {
