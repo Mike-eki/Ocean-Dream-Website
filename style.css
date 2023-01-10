@@ -29,6 +29,11 @@
   background-color: var(--theme-alternative-lighter);
 }
 
+.align-flex {
+  display: flex;
+  align-items: center;
+}
+
 /* Navigation section */
 
 .navigation {
@@ -438,20 +443,48 @@
   gap: 1rem;
 }
 
-.social-body {
-  text-align: center;
-}
-
 .social-media {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.social-img {
+.social-svg {
   width: 60px;
   height: 60px;
 }
+
+.social-media-small {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-svg-small {
+  width: 30px;
+  height: 30px;
+}
+
+.facebook, .whatsapp, .instagram {
+  fill: var(--theme-alternative-light);
+  transition: 
+    fill 500ms ease;
+}
+
+.social-svg:hover .facebook,
+.social-svg-small:hover .facebook {
+  fill: var(--FACEBOOK);
+}
+
+.social-svg:hover .whatsapp,
+.social-svg-small:hover .whatsapp {
+  fill: var(--WHATSAPP);
+}
+
+.social-svg:hover .instagram,
+.social-svg-small:hover .instagram {
+  fill: var(--INSTAGRAM);
+}
+
 
 .formulario {
   position: relative;
@@ -526,6 +559,13 @@
 .footer-links:has(.logo-container){
   justify-self: center;
   align-self: center;
+}
+
+.address-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.2rem;
 }
 
 @media (max-width: 1080px) {
