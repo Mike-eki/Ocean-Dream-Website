@@ -113,6 +113,7 @@
 
 html {
   color: var(--theme-lighter);
+  scroll-behavior: smooth;
 }
 
 html:focus-within {
@@ -120,6 +121,7 @@ html:focus-within {
 }
 
 body {
+  position: relative;
   background-color: var(--theme-lighter);
   text-rendering: optimizeSpeed;
   min-height: 100vh;
@@ -288,8 +290,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-button,
-.button {
+.btn {
   --button-background: var(--theme-main);
   --button-color-font: var(--theme-alternative-dark);
   --button-padding: 0.5rem 1rem;
@@ -319,19 +320,16 @@ button,
     background-color 500ms var(--fast),
     outline 200ms var(--fast);
 }
-button:hover,
-.button:hover {
+.btn:hover {
   outline: 2px solid var(--button-color-font);
   --button-color-font: var(--theme-main);
 }
-
-button:hover::before {
+.btn:hover::before {
   left: 0%;
 	right: auto;
 	width: 100%;
 }
-
-button::before {
+.btn::before {
   display: block;
 	position: absolute;
 	top: 0px;
