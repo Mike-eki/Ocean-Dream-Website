@@ -159,12 +159,6 @@ address {
   line-height: 1.3;
 }
 
-nav {
-  --nav-padding: 0.5rem 1em;
-
-  padding: var(--nav-padding);
-}
-
 .m-all,
 .m-horizontal,
 .m-horizontal-x,
