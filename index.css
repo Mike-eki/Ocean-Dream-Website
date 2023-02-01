@@ -12,30 +12,36 @@
 :root {
   /* CONSTANTS */
 
-  --CLR-PRIMARY-700: #fbc02d !important;
-  --CLR-PRIMARY-600: #fdd835 !important;
-  --CLR-PRIMARY-500: #ffeb3b !important;
-  --CLR-PRIMARY-400: #ffee58 !important;
-  --CLR-PRIMARY-300: #fff176 !important;
+  --CLR-TEST-100: #0a3a5d !important;
+  --CLR-TEST-200: #03579d !important;
+  --CLR-TEST-300: #03589b !important;
+  --CLR-TEST-400: #1d70b7 !important;
+  --CLR-TEST-500: #2481c6 !important;
 
-  --CLR-SECONDARY-700: #303f9f !important;
-  --CLR-SECONDARY-600: rgb(57, 73, 171) !important;
-  --CLR-SECONDARY-500: #3f51b5 !important;
-  --CLR-SECONDARY-400: rgb(92, 107, 192) !important;
-  --CLR-SECONDARY-300: #7986cb !important;
+  --CLR-PRIMARY-50: #0a155d !important;
+  --CLR-PRIMARY-100: #152276 !important;
+  --CLR-PRIMARY-200: #223192 !important;
+  --CLR-PRIMARY-300: #303f9f !important;
+  --CLR-PRIMARY-400: rgb(57, 73, 171) !important;
+  --CLR-PRIMARY-500: #3f51b5 !important;
+  --CLR-PRIMARY-600: rgb(92, 107, 192) !important;
+  --CLR-PRIMARY-700: #7986cb !important;
 
-  /* --CLR-TERTIARY-700: #d32f2f !important;
-  --CLR-TERTIARY-600: #e53935 !important;
-  --CLR-TERTIARY-500: #f44336 !important;
-  --CLR-TERTIARY-400: #ef5350 !important;
-  --CLR-TERTIARY-300: #e57373 !important; */
-
-  --CLR-NEUTRAL-100: rgb(235, 235, 235) !important;
-  --CLR-NEUTRAL-200: rgb(220, 220, 220) !important;
-  --CLR-NEUTRAL-300: rgb(205, 205, 205) !important;
-  --CLR-NEUTRAL-700: rgb(55, 55, 55) !important;
-  --CLR-NEUTRAL-800: rgb(30, 30, 30) !important;
-  --CLR-NEUTRAL-900: rgb(15, 15, 15) !important;
+  --CLR-SECONDARY-500: rgb(201, 226, 246) !important;
+  --CLR-SECONDARY-600: rgb(210, 230, 246) !important;
+  --CLR-SECONDARY-700: rgb(223, 236, 247) !important;
+  --CLR-SECONDARY-800: rgb(231, 240, 248) !important;
+  --CLR-SECONDARY-900: rgb(244, 250, 255) !important;
+  
+  --CLR-NEUTRAL-50: rgb(15, 15, 15) !important;
+  --CLR-NEUTRAL-100: rgb(30, 30, 30) !important;
+  --CLR-NEUTRAL-200: rgb(55, 55, 55) !important;
+  --CLR-NEUTRAL-300: rgb(70, 70, 70) !important;
+  --CLR-NEUTRAL-600: rgb(205, 205, 205) !important;
+  --CLR-NEUTRAL-700: rgb(220, 220, 220) !important;
+  --CLR-NEUTRAL-800: rgb(235, 235, 235) !important;
+  --CLR-NEUTRAL-900: rgb(245, 245, 245) !important;
+  --CLR-NEUTRAL-1000: rgb(255, 255, 255) !important;
 
   --WHATSAPP: #25D366 !important;
   --FACEBOOK: #1877F2 !important;
@@ -43,31 +49,25 @@
 
   /* Themes */
 
-  --theme-main-lighter: var(--CLR-PRIMARY-300);
-  --theme-main-light: var(--CLR-PRIMARY-400);
-  --theme-main: var(--CLR-PRIMARY-500);
-  --theme-main-dark: var(--CLR-PRIMARY-600);
-  --theme-main-darker: var(--CLR-PRIMARY-700);
+  --theme-main-lighter: var(--CLR-TEST-500);
+  --theme-main-light: var(--CLR-TEST-400);
+  --theme-main: var(--CLR-TEST-300);
+  --theme-main-dark: var(--CLR-TEST-200);
+  --theme-main-darker: var(--CLR-TEST-100);
 
-  --theme-alternative-lighter: var(--CLR-SECONDARY-300);
-  --theme-alternative-light: var(--CLR-SECONDARY-400);
-  --theme-alternative: var(--CLR-SECONDARY-500);
+  --theme-alternative-lighter: var(--CLR-SECONDARY-900);
+  --theme-alternative-light: var(--CLR-SECONDARY-800);
+  --theme-alternative: var(--CLR-SECONDARY-700);
   --theme-alternative-dark: var(--CLR-SECONDARY-600);
-  --theme-alternative-darker: var(--CLR-SECONDARY-700);
+  --theme-alternative-darker: var(--CLR-SECONDARY-500);
 
-  /* --theme-additional-lighter: var(--CLR-TERTIARY-300);
-  --theme-additional-light: var(--CLR-TERTIARY-400);
-  --theme-additional: var(--CLR-TERTIARY-500);
-  --theme-additional-dark: var(--CLR-TERTIARY-600);
-  --theme-additional-darker: var(--CLR-TERTIARY-700); */
+  --theme-lighter: var(--CLR-NEUTRAL-900);
+  --theme-light: var(--CLR-NEUTRAL-800);
+  --theme-semilight: var(--CLR-NEUTRAL-700);
 
-  --theme-lighter: var(--CLR-NEUTRAL-100);
-  --theme-light: var(--CLR-NEUTRAL-200);
-  --theme-semilight: var(--CLR-NEUTRAL-300);
-
-  --theme-semidark: var(--CLR-NEUTRAL-700);
-  --theme-dark: var(--CLR-NEUTRAL-800);
-  --theme-darker: var(--CLR-NEUTRAL-900);
+  --theme-semidark: var(--CLR-TEST-300);
+  --theme-dark: var(--CLR-TEST-200);
+  --theme-darker: var(--CLR-TEST-100);
 
   /* Cubic Bazer */
 
@@ -112,7 +112,7 @@
 }
 
 html {
-  color: var(--theme-lighter);
+  color: var(--theme-darker);
   scroll-behavior: smooth;
 }
 
@@ -136,7 +136,7 @@ h4,
 h5,
 h6,
 .invert-theme {
-  --heading-color: var(--theme-main);
+  --heading-color: var(--theme-main-dark);
   color: var(--heading-color);
   font-family: var(--f-family-secondary);
   font-weight: inherit;
@@ -178,7 +178,7 @@ address {
 .p-top,
 .p-bottom-s,
 .p-bottom,
-.f-gap {
+.f-gap-sss {
   --p-top: 0rem;
   --p-right: 0rem;
   --p-bottom: 0rem;
@@ -193,14 +193,13 @@ address {
 
   --container-padding: var(--p-top) var(--p-right) var(--p-bottom) var(--p-left);
   --container-margin: var(--m-top) var(--m-right) var(--m-bottom) var(--m-left);
-  --container-gap: var(--gap);
 
   padding: var(--container-padding);
   margin: var(--container-margin);
-  gap: var(--container-gap);
+  gap: var(--gap);
 }
 
-.f-gap {
+.f-gap-sss {
   --gap: 0.25rem;
 }
 
@@ -286,7 +285,7 @@ a:not([class]) {
 
 .btn {
   --button-background: var(--theme-main);
-  --button-color-font: var(--theme-alternative-dark);
+  --button-color-font: var(--theme-alternative-lighter);
   --button-padding: 0.5rem 1rem;
   --button-border-radius: 10px;
   --button-font-size: 1rem;
@@ -314,11 +313,11 @@ a:not([class]) {
     background-color 500ms var(--fast),
     outline 200ms var(--fast);
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   outline: 2px solid var(--button-color-font);
   --button-color-font: var(--theme-main);
 }
-.btn:hover::before {
+.btn:hover::before, .btn:focus::before {
   left: 0%;
 	right: auto;
 	width: 100%;
@@ -333,7 +332,7 @@ a:not([class]) {
 	z-index: -1;
 	content: '';
 	color: var(--theme-main);
-	background: var(--theme-alternative);
+	background: var(--theme-alternative-lighter);
   border-radius: calc(var(--button-border-radius) - 2px);
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
@@ -352,7 +351,7 @@ input,
 textarea,
 select {
   font: inherit;
-  color: var(--theme-semilight);
+  color: var(--theme-main-light);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;

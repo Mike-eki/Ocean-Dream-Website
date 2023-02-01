@@ -26,7 +26,6 @@ let prevScrollY = window.scrollY
 
 const nav = document.querySelector('.navigation');
 const btnMenu = document.querySelector('.btn-menu')
-console.log(btnMenu.className)
 
 document.addEventListener('scroll', hideNavigation)
 

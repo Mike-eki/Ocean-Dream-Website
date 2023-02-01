@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 897.66 224.01">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-family: KhmerUI, 'Khmer UI';
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #3c3c3b;
+      }
+
+      .cls-1, .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        font-size: 149.74px;
+      }
+
+      .cls-2 {
+        font-size: 73.66px;
+        letter-spacing: .13em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        fill: #1d70b7;
+      }
+
+      .cls-6, .cls-5 {
+        font-family: KhmerUI-Bold, 'Khmer UI';
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <text class="cls-7" transform="translate(0 127.29)"><tspan class="cls-6" x="0" y="0">Ocean</tspan><tspan class="cls-5" x="428.6" y="0"> </tspan><tspan class="cls-4" x="468.11" y="0">D</tspan><tspan class="cls-3" x="571.3" y="0">r</tspan><tspan class="cls-1" x="619.59" y="0">eam</tspan></text>
+  <text class="cls-2" transform="translate(204.72 206.67)"><tspan x="0" y="0">Inmobiliaria</tspan></text>
+</svg>
