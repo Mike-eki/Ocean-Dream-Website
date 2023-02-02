@@ -1,0 +1,76 @@
+.footer-page {
+    background-color: var(--theme-alternative-darker);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-wrapper-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-links:has(.logo-container){
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .address-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0.2rem;
+  }
+  
+  @media (max-width: 1080px) {
+    .footer-wrapper-links {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .footer-wrapper-links {
+      grid-template-columns: none;
+      justify-items: baseline;
+      justify-content: center;
+    }
+  }
+  
+  .small-details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+  }
+  
+  .heart {
+    display: inline-block;
+    background: url('/assets/svg/heart.svg');
+    width: 20px;
+    height: 20px;
+    animation: heart-pulse 2s var(--fast) infinite;
+  }
+  
+  @keyframes heart-pulse {
+    0% {
+      transform: scale(1.0);
+    }
+  
+    22% {
+      transform: scale(1.4);
+    }
+  
+    55% {
+      transform: scale(1.0);
+    }
+  
+    77% {
+      transform: scale(1.4);
+    }
+  
+    100% {
+      transform: scale(1.0);
+    }
+  }
+  

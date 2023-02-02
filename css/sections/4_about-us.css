@@ -1,0 +1,39 @@
+.acerca-de {
+    background-color: var(--theme-alternative-dark);
+  }
+  
+  .wrapper, .wrapper-r {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .wrapper-r {
+    flex-direction: row-reverse;
+  }
+  
+  .acerca-de-picture {
+    width: clamp(100px, 50vw, 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .acerca-de-picture img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    clip-path: circle();
+  }
+  
+  .body-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .body-ch {
+    line-height: 1.4;
+    max-width: 50ch;
+  }

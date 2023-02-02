@@ -1,0 +1,62 @@
+.contacto {
+    background-color: var(--theme-alternative-dark);
+  }
+  
+  .contacto-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacto-header {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .contacto-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-svg, .social-svg-small {
+    width: 60px;
+    height: 60px;
+    fill: var(--CLR-NEUTRAL-1000);
+  }
+  
+  .social-media-small {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .social-svg-small {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .facebook, .whatsapp, .instagram {
+    fill: var(--theme-main-darker);
+    transition: 
+      fill 500ms ease;
+  }
+  
+  .social-svg:hover .facebook,
+  .social-svg-small:hover .facebook {
+    fill: var(--FACEBOOK);
+  }
+  
+  .social-svg:hover .whatsapp,
+  .social-svg-small:hover .whatsapp {
+    fill: var(--WHATSAPP);
+  }
+  
+  .social-svg:hover .instagram,
+  .social-svg-small:hover .instagram {
+    fill: var(--INSTAGRAM);
+  }

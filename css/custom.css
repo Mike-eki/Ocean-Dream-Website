@@ -1,0 +1,169 @@
+.m-all,
+.m-horizontal,
+.m-horizontal-x,
+.m-horizontal-xx,
+.m-vertical,
+.m-vertical-x,
+.m-vertical-xx,
+.m-bottom,
+.p-all-s,
+.p-all,
+.p-horizontal,
+.p-horizontal-x,
+.p-horizontal-xx,
+.p-vertical,
+.p-vertical-x,
+.p-vertical-xx,
+.p-top,
+.p-bottom-s,
+.p-bottom,
+.f-gap-ss,
+.f-gap-sss {
+  --p-top: 0rem;
+  --p-right: 0rem;
+  --p-bottom: 0rem;
+  --p-left: 0rem;
+
+  --m-top: 0rem;
+  --m-right: 0rem;
+  --m-bottom: 0rem;
+  --m-left: 0rem;
+
+  --gap: 0rem;
+
+  --container-padding: var(--p-top) var(--p-right) var(--p-bottom) var(--p-left);
+  --container-margin: var(--m-top) var(--m-right) var(--m-bottom) var(--m-left);
+
+  padding: var(--container-padding);
+  margin: var(--container-margin);
+  gap: var(--gap);
+}
+
+.f-gap-ss {
+  --gap: 0.50rem;
+}
+
+.f-gap-sss {
+  --gap: 0.25rem;
+}
+
+.m-vertical-x {
+  --m-top: 1.5rem;
+  --m-bottom: 1.5rem;
+}
+
+.m-horizontal {
+  --m-right: 1rem;
+  --m-left: 1rem;
+}
+
+.m-horizontal-x {
+  --m-right: 1.5rem;
+  --m-left: 1.5rem;
+}
+
+.m-horizontal-xx {
+  --m-right: 2rem;
+  --m-left: 2rem;
+}
+
+.m-bottom {
+  --m-bottom: 1rem;
+}
+
+.p-all-s {
+  --p-top: 0.5rem;
+  --p-left: 0.5rem;
+  --p-bottom: 0.5rem;
+  --p-right: 0.5rem;
+}
+
+.p-all {
+  --p-top: 1rem;
+  --p-left: 1rem;
+  --p-bottom: 1rem;
+  --p-right: 1rem;
+}
+
+.p-all-x {
+  --p-top: 1.5rem;
+  --p-left: 1.5rem;
+  --p-bottom: 1.5rem;
+  --p-right: 1.5rem;
+}
+
+.p-bottom-s {
+  --p-bottom: 0.5rem;
+}
+
+.p-vertical {
+  --p-top: 1rem;
+  --p-bottom: 1rem;
+}
+
+.p-horizontal {
+  --p-left: 1rem;
+  --p-right: 1rem;
+}
+
+.p-top {
+  --p-top: 1rem;
+}
+
+.p-bottom {
+  --p-bottom: 1rem;
+}
+
+.btn {
+    --button-background: var(--theme-main);
+    --button-color-font: var(--theme-alternative-lighter);
+    --button-padding: 0.5rem 1rem;
+    --button-border-radius: 10px;
+    --button-font-size: 1rem;
+    --button-font-weight: 700;
+  
+    background-color: var(--button-background);
+    color: var(--button-color-font);
+  
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    font-family: var(--f-family-primary);
+  
+    border: none;
+    outline: transparent;
+    border-radius: var(--button-border-radius);
+    
+    cursor: pointer;
+      display: block;
+      position: relative;
+    z-index: 1;
+    
+    transition: 
+      color 500ms var(--fast), 
+      background-color 500ms var(--fast),
+      outline 200ms var(--fast);
+  }
+  .btn:hover, .btn:focus {
+    outline: 2px solid var(--button-color-font);
+    --button-color-font: var(--theme-main);
+  }
+  .btn:hover::before, .btn:focus::before {
+    left: 0%;
+      right: auto;
+      width: 100%;
+  }
+  .btn::before {
+    display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 100%;
+      width: 0px;
+      z-index: -1;
+      content: '';
+      color: var(--theme-main);
+      background: var(--theme-alternative-lighter);
+    border-radius: calc(var(--button-border-radius) - 2px);
+      transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  }

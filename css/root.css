@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    /* CONSTANTS */
+  
+    --CLR-PRIMARY-100: #0a3a5d !important;
+    --CLR-PRIMARY-200: #03579d !important;
+    --CLR-PRIMARY-300: #03589b !important;
+    --CLR-PRIMARY-400: #1d70b7 !important;
+    --CLR-PRIMARY-500: #2481c6 !important;
+  
+    --CLR-SECONDARY-500: rgb(201, 226, 246) !important;
+    --CLR-SECONDARY-600: rgb(210, 230, 246) !important;
+    --CLR-SECONDARY-700: rgb(223, 236, 247) !important;
+    --CLR-SECONDARY-800: rgb(231, 240, 248) !important;
+    --CLR-SECONDARY-900: rgb(244, 250, 255) !important;
+    
+    --CLR-NEUTRAL-50: rgb(15, 15, 15) !important;
+    --CLR-NEUTRAL-100: rgb(30, 30, 30) !important;
+    --CLR-NEUTRAL-200: rgb(55, 55, 55) !important;
+    --CLR-NEUTRAL-300: rgb(70, 70, 70) !important;
+    --CLR-NEUTRAL-600: rgb(205, 205, 205) !important;
+    --CLR-NEUTRAL-700: rgb(220, 220, 220) !important;
+    --CLR-NEUTRAL-800: rgb(235, 235, 235) !important;
+    --CLR-NEUTRAL-900: rgb(245, 245, 245) !important;
+    --CLR-NEUTRAL-1000: rgb(255, 255, 255) !important;
+  
+    --WHATSAPP: #25D366 !important;
+    --FACEBOOK: #1877F2 !important;
+    --INSTAGRAM: #E1306C !important;
+  
+    /* Themes */
+  
+    --theme-main-lighter: var(--CLR-PRIMARY-500);
+    --theme-main-light: var(--CLR-PRIMARY-400);
+    --theme-main: var(--CLR-PRIMARY-300);
+    --theme-main-dark: var(--CLR-PRIMARY-200);
+    --theme-main-darker: var(--CLR-PRIMARY-100);
+  
+    --theme-alternative-lighter: var(--CLR-SECONDARY-900);
+    --theme-alternative-light: var(--CLR-SECONDARY-800);
+    --theme-alternative: var(--CLR-SECONDARY-700);
+    --theme-alternative-dark: var(--CLR-SECONDARY-600);
+    --theme-alternative-darker: var(--CLR-SECONDARY-500);
+  
+    --theme-lighter: var(--CLR-NEUTRAL-900);
+    --theme-light: var(--CLR-NEUTRAL-800);
+    --theme-semilight: var(--CLR-NEUTRAL-700);
+  
+    --theme-semidark: var(--CLR-PRIMARY-300);
+    --theme-dark: var(--CLR-PRIMARY-200);
+    --theme-darker: var(--CLR-PRIMARY-100);
+  
+    /* Cubic Bazer */
+  
+    --fast: cubic-bezier(0, 0.5, 0.5, 1); 
+    --slow: cubic-bezier(0.5, 0, 1, 0.5);
+  
+    /* Responsive Font Settings */
+  
+    --min-fs: 1;
+    --max-fs: 1.55;
+    --min-vw: 20;
+    --max-vw: 45;
+  
+    --min-fs-rem: var(--min-fs) * 1rem;
+    --max-fs-rem: var(--max-fs) * 1rem;
+    --min-vw-rem: var(--min-vw) * 1rem;
+  
+    --slope: (var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) /
+      (var(--max-vw) - var(--min-vw));
+  
+    /* Applying Resposiveness to the font */
+  
+    font-size: clamp(
+      var(--min-fs-rem),
+      var(--min-fs-rem) + var(--slope),
+      var(--max-fs-rem)
+    );
+  
+    /* Typographies */
+  
+    --f-family-primary: "Glory", sans-serif;
+    --f-family-secondary: 'Bree Serif', serif;
+  }

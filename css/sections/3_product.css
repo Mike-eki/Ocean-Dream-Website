@@ -1,0 +1,29 @@
+.products {
+    background-color: var(--theme-alternative-darker);
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    grid-template-rows: 1fr min-content;
+    grid-gap: 1rem;
+  }
+  
+  .product-card {
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: var(--theme-alternative-dark);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    cursor: pointer;
+  }
+  
+  .product-picture img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  
+  .product-body {
+    padding: 0.3em 0 0.5em 0.75em;
+  }
