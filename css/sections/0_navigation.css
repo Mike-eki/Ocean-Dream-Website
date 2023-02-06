@@ -35,6 +35,7 @@
     display: flex;
     list-style: none;
     gap: 2em;
+    transition: left 500ms ease;
   }
   
   .option {
@@ -140,29 +141,28 @@
       justify-content: space-between;
     }
     .link-options {
-      display: none;
-      top: 0;
-      transition: top 500ms ease;
-    }
-    .navigation:has(.btn-menu.active) > .link-options {
-      display: flex;
-    }
-    .link-options {
+      top: 66px; left: 100%;
       background-color: var(--theme-alternative-dark);
       position: absolute;
       gap: 0;
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      top: 62px; left: 0;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    .btn-menu.active + .link-options {
+      display: flex;
+      left: 0;
     }
     .option {
+      width: 100%;
       height: 60px;
     }
     .option .link {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       height: 100%;
       transition:
         background-color 500ms ease;
