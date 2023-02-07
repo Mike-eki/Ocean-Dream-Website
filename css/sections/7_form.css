@@ -17,7 +17,7 @@
   }
   
   .form-container {
-    background-color: var(--theme-alternative-dark);
+    background-color: var(--theme-alternative);
     width: 400px;
     display: flex;
     flex-direction: column;

@@ -76,13 +76,14 @@ iframe,
 figure {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input,
 textarea,
 select {
   font: inherit;
-  color: var(--theme-main-light);
+  color: var(--theme-main-dark);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
