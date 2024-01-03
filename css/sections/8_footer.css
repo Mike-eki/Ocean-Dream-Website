@@ -46,7 +46,7 @@
   
   .heart {
     display: inline-block;
-    background: url('./assets/svg/heart.svg');
+    background: url('../../assets/svg/heart.svg');
     width: 20px;
     height: 20px;
     animation: heart-pulse 2s var(--fast) infinite;
